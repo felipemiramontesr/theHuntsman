@@ -1,0 +1,61 @@
+<div class="layout-container">
+
+  <header role="banner" id="header">
+      <div id="site-branding">
+        {{ page.header }}
+      </div>
+      
+      <div id="user-account-menu">
+         {% if page.primary_menu %}
+              {{page.primary_menu }}
+         {% endif %}
+      </div>
+  </header>
+
+<div id="container-one">
+  
+  <div id="sidebar_first">
+      {% if page.sidebar_first %}
+                {{ page.sidebar_first }}
+      {% endif %}
+  </div>
+
+  <div id="container-two">
+      <div id="content">
+        <main role="main">
+            <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+            <div class="layout-content">
+              {{ page.content }}
+            </div>{# /.layout-content #}
+        </main>
+      </div>
+  </div>
+
+</div>
+
+<div id="footer_first">
+      {% if page.footer_first %}
+          <footer role="contentinfo">
+              {{ page.footer_first }}
+          </footer>
+     {% endif %}
+ </div>
+  
+<div id="footer_second">
+
+  <div id="footer_second_left">
+     <p> All Rights Reserved. With all of my hate, FF ↦ <a href="mailto:felipemiramontesr@gmail.com">Mail me bitch</a></p>
+  </div>
+
+  <div id="footer_second_right">
+      {% if page.footer_second %}
+          <footer role="contentinfo">
+              {{ page.footer_second }}
+          </footer>
+      {% endif %}
+  </div>     
+</div>
+  
+
+</div>{# /.layout-container #}

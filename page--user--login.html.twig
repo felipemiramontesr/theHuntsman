@@ -1,0 +1,39 @@
+<div class="layout-container">
+
+  <header role="banner" id="header-page--user--login">
+      <div id="site-branding-page--user--login">
+        {{ page.header }}
+      </div>
+  </header>
+
+  <div id="login-container">
+      <div id="login">
+         {{ page.content }}
+      </div>
+  </div>
+
+<div id="footer_first">
+      {% if page.footer_first %}
+          <footer role="contentinfo">
+              {{ page.footer_first }}
+          </footer>
+     {% endif %}
+ </div>
+  
+<div id="footer_second">
+
+  <div id="footer_second_left">
+    <p> All Rights Reserved. With all of my hate, FF ↦ <a href="mailto:felipemiramontesr@gmail.com">Mail me bitch</a></p>
+  </div>
+
+  <div id="footer_second_right">
+      {% if page.footer_second %}
+          <footer role="contentinfo">
+              {{ page.footer_second }}
+          </footer>
+      {% endif %}
+  </div>     
+</div>
+  
+
+</div>{# /.layout-container #}
